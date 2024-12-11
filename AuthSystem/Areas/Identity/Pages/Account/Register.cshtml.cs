@@ -53,6 +53,7 @@ namespace AuthSystem.Areas.Identity.Pages.Account
         [BindProperty]
         public InputModel Input { get; set; }
 
+
         /// <summary>
         ///     This API supports the ASP.NET Core Identity default UI infrastructure and is not intended to be used
         ///     directly from your code. This API may change or be removed in future releases.
@@ -71,6 +72,15 @@ namespace AuthSystem.Areas.Identity.Pages.Account
         /// </summary>
         public class InputModel
         {
+
+            [DataType(DataType.Text)]
+            [Display(Name = "First Name")]
+            public string FirstName { get; set; }
+
+
+            [DataType(DataType.Text)]
+            [Display(Name = "Last Name")]
+            public string LastName { get; set; }
             /// <summary>
             ///     This API supports the ASP.NET Core Identity default UI infrastructure and is not intended to be used
             ///     directly from your code. This API may change or be removed in future releases.
